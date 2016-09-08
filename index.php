@@ -48,5 +48,79 @@ define("PI","3,14",true);
        echo __LINE__;
        echo "</br>";
        echo PHP_VERSION;
+       echo "</br>";
 
+       echo "</br>";
+$WhatIs="Пример";
+unset($WhatIs);
+       echo $WhatIs;
+       echo "</br>";       
+
+       echo "</br>";
+$WhatIsThat="Test";
+$Random=43;
+$Result=$WhatIsThat.$Random;
+
+if (is_integer($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>"; 
+if (is_string($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";    
+if (is_double($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";    
+if (is_bool($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";    
+if (is_array($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";
+if (is_scalar($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";
+if (is_object($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+}
+echo "</br>";
+if (is_numeric($Result)) {
+echo "yes";
+}
+else {
+echo "no";
+echo "</br>";
+
+echo "</br>";
+$varone="73";
+$vartwo="27";
+$results=$varone+$vartwo;
+echo $results;
+}                      
 ?> 
